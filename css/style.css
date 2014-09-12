@@ -1,0 +1,232 @@
+ http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	padding-top:20px;
+}
+ ol, ul {
+	list-style: none;
+} 
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.well {
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+}
+.center {
+	margin: 0 auto;
+	display: block !important;
+}
+.border-row {
+	border-bottom: 1px solid black;
+	width: 100%;
+	height: 1px;
+}
+.tallwell {
+	height: 1000px;
+}
+.green {
+	color: green;
+}
+.red {
+	color: red;
+}
+.cheader {
+	text-align:  center;
+}
+.center {
+	
+	margin: 75px auto;
+}
+.ccenter{
+	margin: 330px;
+}
+
+.sidebar {
+	width: 8%;
+
+
+}
+.sidebarr {
+	width: 15%;
+
+
+}
+.cccenter {
+	margin: 65px 0px;
+}
+
+.pushdown {
+	height: 1000px;
+}
+
+.divcenter {
+	margin-top: 0px;
+	position: relative;
+	top: 50px;
+	left: 100px;
+
+
+
+}
+.rowsize {
+	margin-bottom: 100px;
+	background-color: #fff;
+	border: 1px #dedede solid;
+	width: 880px;
+	margin: 10px auto !important;
+	margin-bottom: 12px;
+	text-align: left;
+	padding: 10px 0;
+	word-wrap: break-word;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px #dfdfdf;
+}
+
+.profilee {
+	margin-top: 0px;
+	border-top-width: 0px;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+.ccontainer {
+   width: 400px;
+   height: 150px;
+}
+
+.ccontainer img {
+   width: 100%;
+   height: 100%;
+}
+.rowness {
+	margin-left: auto;
+margin-right: auto;
+padding: 20px 0 0;
+width: 978px;
+border-left: 1px solid #d4d4d4;
+border-right: 1px solid #d4d4d4;
+min-height: 100%;
+background-color: #fff;
+-webkit-box-shadow: 0 8px 10px #dedede;
+-moz-box-shadow: 0 8px 10px #dedede;
+box-shadow: 0 8px 10px #dedede;
+border-top: 32px #d8d8d8 solid;
+margin: 0px auto !important;
+
+}
+.body {
+background: #fff;
+color: #444;
+font-family: "Open Sans", sans-serif;
+margin: 62px auto 25px;
+padding: 20px 20px 10px 20px;
+max-width: 1020px;
+-webkit-font-smoothing: subpixel-antialiased;
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.13);
+box-shadow: 0 1px 3px rgba(0,0,0,0.13);
+}
+
+
+.wrapper01 {
+width: 100%;
+height: 100%;
+margin: 0 auto !important;
+padding: 35px 0px 0px 0px;
+
+}
+.right {
+	padding: 9px 70px 17px 80px;
+}
+.welll {
+width: 100%;
+height: 800px;
+margin: 0 auto;
+}
+.middletext {
+	text-align:center;
+}
+.bottomm {
+	position: absolute; 
+bottom: 0;
+}
+
+loatright {
+	float: left;
+}
+.heightdiv {
+	height: 1000px;
+}
+.fontbold{
+font-weight: bold;
+}
+.imgpice img {
+	width: 622px;
+   height: 480px;
+
+}
+.extraheight {
+	display: block;
+	width: 100%;
+	height: 150px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.buttoncenter {
+margin: 10px auto;
+}
+
