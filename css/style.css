@@ -230,3 +230,33 @@ font-weight: bold;
 margin: 10px auto;
 }
 
+.rowdiv {
+	margin-bottom: 100px;
+	background-color: #fff;
+	border: 1px #dedede solid;
+	width: 701px;
+	margin: 10px auto !important;
+	margin-bottom: 12px;
+	text-align: left;
+	padding: 10px 0;
+	word-wrap: break-word;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px #dfdfdf;
+}
+.divsize {
+	width: 121px;
+	float: left;
+}
+.divsize p {
+	float: left;
+}
+.lefty {
+	float: right;
+
+}
+
+.marginauto {
+	margin: 0 125px;
+
+}

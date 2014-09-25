@@ -22,13 +22,17 @@
          <div class="well center">
             <form role="form" action="controller/login_handler.php" method="post">
                 <div class="form-group">
-                    <label for="email">Email/Username </label>
+                    <label for="email">Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
                 </div>  
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" name="password" id="password" placeholder="Enter passwword">
                 </div>
+                <div class="form-group">
+                    <label for="username">username</label>
+                    <input type="username" class="form-control" name="username" id="username" placeholder="Enter username">
+                </div>  
                 <button type="submit" class="btn btn-success center">Login</button>
             </form>
         </div>

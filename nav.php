@@ -54,18 +54,22 @@
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="pants_auction.php">Auctions</a></li>			
 				<li class="dropdown">
+					
 				<?php 
 				if($signedin == 1)
 				{
 					echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile <span class="caret"></span></a>';
 					echo '<ul class="dropdown-menu" role="menu">';
+				
 				if($flag == 1)
 				{
 					echo '<li><a href="my_profile.php">My Profile</a></li>';
+					
 				}
 				else
 				{
-					echo '<li><a href="edit_profile.php">Create Profile</a></li>';
+					echo '<li><a href="edit_profile.php">Create Profile</a></li>';			
+					
 				}
 					echo '<li><a href="account_manager.php">Manage Account</a></li>';
 					echo '<li><a href="new_pants.php">Post new listing</a></li>';
@@ -79,20 +83,24 @@
 				{
 					echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>';
 					echo '<ul class="dropdown-menu" role="menu">';
-				}	
+				}
+
 				?>
+				</ul>	
+				</li>
+				</ul>
 					<ul class="nav navbar-nav navbar-right">
 					<?php 
 					if($signedin == 1) {
 						echo '<li><a href="#">' . $_SESSION['email'] . '</a></li>';
-						echo '<li><a href="controller/logout_handler.php">Sign out</a></li>';
+						echo '<li><a href="controller/logout_handler.php">Sign out</a></li>';						
 					} 
 					else {
 						echo '<li><a href="a_and_b_login.php">Sign in</a></li>';
-						echo '<li class="active"><a href="a&b_pants.php">Register</a></li>';	
+						echo '<li class="active"><a href="a&b_pants.php">Register</a></li>';						
 					}  
 					?>
-				</ul>
+					</ul>
 			</div><!--/.nav-collapse -->
 		</div>
 	</div>

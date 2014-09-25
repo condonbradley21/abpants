@@ -3,16 +3,18 @@
   include('../common/common.php');
 
   $email = $_POST['email'];
+  $username = $_POST['username'];
 
   //This query did not have the FROM clause, FROM is a required clause for most SQL queries.  
   $query = "
   		SELECT *
       FROM a_and_b_pants_database
-  		WHERE `email` = :email
+  		WHERE `email` = :email AND username =:username
   ";
 
   $query_params = array(
-  	":email" => $email
+  	":email" => $email,
+    ":username" => $username
   );
 
   try 

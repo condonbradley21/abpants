@@ -7,6 +7,7 @@ $last_name = $_POST['last_name'];
 $email = $_POST['email'];
 $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $string = "unqiuetoken_sender";  
+$username = $_POST['username'];
 $uniquetoken = md5($string . $_POST['email']);
 
 
@@ -41,7 +42,7 @@ echo $email;
     else{
       $query = " 
           INSERT INTO a_and_b_pants_database
-          SET `first_name` = :first_name, `last_name` = :last_name, `email` = :email, `password` = :password, `uniquetoken` = :uniquetoken, `verified` = :verified
+          SET `first_name` = :first_name, `last_name` = :last_name, `email` = :email, `password` = :password, `uniquetoken` = :uniquetoken, `verified` = :verified, username = :username
       "; 
        
 
@@ -50,6 +51,7 @@ echo $email;
           ":last_name" => $last_name,
           ":email" => $email,
           ":password" => $password,
+          ":username" => $username,
           ":uniquetoken" => $uniquetoken,
           ":verified" => "0"
       );
@@ -63,7 +65,7 @@ echo $email;
       catch(PDOException $ex)
       {die("Failed to run query: " . $ex->getMessage());}
 
-      $link = "http://162.243.143.150/a&bpants/controller/activation_handler.php?uid=" . $uniquetoken;
+      $link = "http://162.243.143.150/abpants/controller/activation_handler.php?uid=" . $uniquetoken;
       $to = $email;
       $from = "no-reply@abpants.com";
       $subject = "A & B Pants Activiation";
@@ -73,6 +75,7 @@ echo $email;
       'X-Mailer: PHP/' . phpversion();
 
       mail($to, $subject, $message, $headers);
+      header("location: ../home_page.php");
     }
 //     $query_verify_email = "SELECT a_and_b_pants_database * FROM id  WHERE email ='$email'";
 //           $result_verify_email = mysqli_query($dbc, $query_verify_email);

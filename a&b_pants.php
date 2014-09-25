@@ -28,6 +28,9 @@
 					<input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
 				</div>
 				<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" class="form-control" name="username" id="username" placeholder="UserName">
+				<div class="form-group">
 					<label for="name">First Name</label>
 					<input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name">
 				</div>

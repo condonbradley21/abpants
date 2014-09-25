@@ -2,6 +2,14 @@
 include('common/common.php');
 
 $query = " 
+    SELECT *
+    FROM a_and_b_pants_database
+    WHERE id = :id
+";
+
+
+
+$query = " 
 	SELECT *
 	FROM pants_table
 
@@ -31,7 +39,7 @@ $items .= '
 		<div class="col-md-2"><br>
 			<br>
 			<br>
-			<span class="fontbold">Price:</span><span>'.$item['price'].'<span>
+			<span class="fontbold">Price:</span><span>'.$item['price']. $item['username'].'</span>
 		</div>
 	</div>';
 }

@@ -22,7 +22,10 @@
 	{die("Failed to run query: " . $ex->getMessage());}
 
 	$row = $stmt->fetch(); 
+	
+	$owner_id = $row['owner_id'];
 
+	echo $owner_id;
 
 	$items = '
 		<div class="row">   
@@ -42,6 +45,7 @@
 		</div><br>
 	';
 ?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
@@ -53,13 +57,20 @@
 	</head>
 	<body class"body">
 	<?php include("nav.php");?>
+	
+	
 		<div class="container-fluid rowness">
 			<?php echo $items; ?>
+			
 			<div class="row">
 				<div class="col-md-12 middletext">
-					<label for="message">Message</label>
-					<input type="message" class="extraheight" name="message" id="message" placeholder="Enter Message">
-					<div><button type="submit" form="mainform" class="btn btn-success buttoncenter">Send Message</button></div>
+					<form role="form" id="mainform" action="controller/messages_handler.php" method="post">
+						<label for="message">Message</label>
+						<input type="hidden" name="from_user" value="<?php echo $_SESSION['id']; ?>"/>
+						<input type="hidden" name="to_user" value="<?php echo $owner_id; ?>"/>
+						<input type="message" class="extraheight" name="message" id="message" placeholder="Enter Message">
+						<div><button type="submit" form="mainform" class="btn btn-success buttoncenter">Send Message</button></div>
+					</form>
 				</div> 
 			</div> 
 		</div>   
